@@ -8,6 +8,7 @@ Url:		https://gitlab.com/accounts-sso/accounts-qml-module
 # https://gitlab.com/accounts-sso/accounts-qml-module/-/archive/master/accounts-qml-module-master.tar.bz2
 Source0:	accounts-qml-module-master.tar.bz2
 BuildRequires:	qdoc5
+BuildRequires:	qmake5
 BuildRequires:	qt5-qtdeclarative
 BuildRequires:	pkgconfig(accounts-qt5)
 BuildRequires:	pkgconfig(libsignon-qt5)
