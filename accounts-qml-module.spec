@@ -57,7 +57,7 @@ libaccounts-qt and libsignon-qt.
 %make_build
 
 %install
-%make_install
+%make_install INSTALL_ROOT=%{buildroot}
 
 # Drop docs
 rm -rf %{buildroot}%{_datadir}/accounts-qml-module/doc/
