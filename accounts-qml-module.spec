@@ -8,7 +8,7 @@ Url:		https://gitlab.com/accounts-sso/accounts-qml-module
 # https://gitlab.com/accounts-sso/accounts-qml-module/-/archive/master/accounts-qml-module-master.tar.bz2
 Source0:	accounts-qml-module-master.tar.bz2
 BuildRequires:	qdoc5
-BuildRequires:	qt5-qml-tools
+BuildRequires:	qt5-qtdeclarative
 BuildRequires:	pkgconfig(accounts-qt5)
 BuildRequires:	pkgconfig(libsignon-qt5)
 BuildRequires:	pkgconfig(Qt5Core)
@@ -17,7 +17,7 @@ BuildRequires:	pkgconfig(Qt5Network)
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Test)
 BuildRequires:	pkgconfig(Qt5Xml)
-Requires:	ubuntuonlineaccounts-qml = %{EVRD}
+Requires:	UbuntuOnlineAccounts-qml = %{EVRD}
 
 %description
 This QML module provides an API to manage the user's online accounts and get
@@ -35,6 +35,7 @@ libaccounts-qt and libsignon-qt.
 Summary:	QML module to manage the user's online accounts
 Group:		System/Libraries
 Provides:	ubuntuonlineaccounts-qml = %{EVRD}
+Provides:	UbuntuOnlineAccounts-qml = %{EVRD}
 
 %description -n %{qmlubuntuonlineaccounts}
 This QML module provides an API to manage the user's online accounts and get
