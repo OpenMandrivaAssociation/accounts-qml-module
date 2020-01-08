@@ -44,8 +44,8 @@ their authentication data. It's a tiny wrapper around the Qt-based APIs of
 libaccounts-qt and libsignon-qt.
 
 %files -n %{qmlubuntuonlineaccounts}
-%dir %{_qt5_prefix}/qml/Ubuntu/OnlineAccounts/
-%{_qt5_prefix}/qml/Ubuntu/OnlineAccounts/*
+%dir %{_qt5_libdir}/qt5/qml/Ubuntu/OnlineAccounts/
+%{_qt5_libdir}/qt5/qml/Ubuntu/OnlineAccounts/*
 
 #----------------------------------------------------------------------------
 
