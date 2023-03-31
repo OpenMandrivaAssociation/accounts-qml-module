@@ -1,7 +1,7 @@
 Summary:	QML module to manage the user's online accounts
 Name:		accounts-qml-module
 Version:	0.7
-Release:	1
+Release:	2
 License:	LGPLv2.1+
 Group:		System/Libraries
 Url:		https://gitlab.com/accounts-sso/accounts-qml-module
