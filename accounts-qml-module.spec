@@ -1,6 +1,9 @@
 %bcond_without qt5
 %bcond_without qt6
 
+%define qmlubuntuonlineaccounts %mklibname UbuntuOnlineAccounts-qml
+%define qmlssoaccounts %mklibname SSOAccounts-qml
+
 Summary:	QML module to manage the user's online accounts
 Name:		accounts-qml-module
 Version:	0.8~20250312
@@ -21,7 +24,7 @@ BuildRequires:	pkgconfig(Qt5Network)
 BuildRequires:	pkgconfig(Qt5Qml)
 BuildRequires:	pkgconfig(Qt5Test)
 BuildRequires:	pkgconfig(Qt5Xml)
-Requires:	UbuntuOnlineAccounts-qml = %{EVRD}
+Requires:	%{qmlubuntuonlineaccounts} = %{EVRD}
 %endif
 %if %{with qt6}
 BuildRequires:	qt6-qttools-doc
@@ -35,7 +38,7 @@ BuildRequires:	pkgconfig(Qt6Network)
 BuildRequires:	pkgconfig(Qt6Qml)
 BuildRequires:	pkgconfig(Qt6Test)
 BuildRequires:	pkgconfig(Qt6Xml)
-Requires:	UbuntuOnlineAccounts-qml-qt6 = %{EVRD}
+Requires:	%{qmlssoaccounts} = %{EVRD}
 %endif
 
 %description
@@ -49,8 +52,6 @@ libaccounts-qt and libsignon-qt.
 #----------------------------------------------------------------------------
 
 %if %{with qt5}
-%define qmlubuntuonlineaccounts %mklibname UbuntuOnlineAccounts-qml
-
 %package -n %{qmlubuntuonlineaccounts}
 Summary:	QML module to manage the user's online accounts
 Group:		System/Libraries
@@ -69,8 +70,6 @@ libaccounts-qt and libsignon-qt.
 #----------------------------------------------------------------------------
 
 %if %{with qt6}
-%define qmlssoaccounts %mklibname SSOAccounts-qml
-
 %package -n %{qmlssoaccounts}
 Summary:	QML module to manage the user's online accounts
 Group:		System/Libraries
